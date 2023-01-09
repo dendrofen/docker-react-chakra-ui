@@ -9,7 +9,7 @@ Scaffold a new project using dokerized boilerplate Create React App and Chakra U
 #### Clone the project
 
 ```bash
-  git clone https://github.com/dendrofen/docker-react-chakra-ui-bolerplate
+  git clone https://github.com/dendrofen/docker-react-chakra-ui
 ```
 
 #### Go to the project directory
