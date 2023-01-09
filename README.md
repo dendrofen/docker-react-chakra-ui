@@ -1,11 +1,33 @@
-![preview](readme/preview.jpg)
+# Dockerized @ Boilerplate React + Chakra UI
 
-# Boilerplate React + Chakra UI
+Scaffold a new project using dokerized boilerplate Create React App and Chakra UI.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [Chakra UI](https://github.com/chakra-ui/chakra-ui/).
+**Note:** This is dockerized version of [Boilerplate React + Chakra UI](https://github.com/inplayo-com/react-chakra-ui-bolerplate)
 
-# Contributors
+## Run Locally
 
-<a href="https://github.com/dendrofen">
-  <img src="https://contrib.rocks/image?repo=dendrofen/dendrofen"/>
-</a>
+#### Clone the project
+
+```bash
+  git clone https://github.com/dendrofen/docker-react-chakra-ui-bolerplate
+```
+
+#### Go to the project directory
+
+```bash
+  cd docker-react-chakra-ui-bolerplate
+```
+
+#### Run docker
+
+```bash
+  docker compose up
+```
+
+## Build Locally
+
+To build this project run
+
+```bash
+  docker compose -f docker-compose.build.yml up
+```
