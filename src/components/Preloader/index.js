@@ -1,13 +1,11 @@
-import { Box, Center, Text } from "@chakra-ui/react";
-import { Image } from "./Image";
+import { Center, Text } from "@chakra-ui/react";
 
-export function Preloader() {
+const Preloader = () => {
     return (
         <Center w={'full'} h={'full'} pos={'fixed'}>
-            <Box className="blink">
-                <Image />
-                <Text fontSize={'lg'}>Boilerplate.</Text>
-            </Box>
+            <Text fontSize={'lg'}>Loading...</Text>
         </Center>
     )
 }
+
+export default Preloader;

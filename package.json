@@ -1,6 +1,7 @@
 {
-  "name": "analitics-app-report",
-  "version": "0.1.0",
+  "name": "docker-chakra-react",
+  "version": "1.0.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.4.3",
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
   }
 }

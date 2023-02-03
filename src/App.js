@@ -1,16 +1,16 @@
 import React, { Suspense, lazy } from 'react';
 import { ChakraProvider } from '@chakra-ui/react'
-import { Preloader } from 'components/Preloader';
-import theme from 'theme'
 import { ColorModeScript } from '@chakra-ui/color-mode';
+import theme from 'theme'
+import Preloader from 'components/Preloader';
 
-const Page = lazy(() => import('components/Page'));
+const HomePage = lazy(() => import('pages/Home'));
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <Suspense fallback={<Preloader />}>
-        <Page />
+        <HomePage />
       </Suspense>
     </ChakraProvider>
   );

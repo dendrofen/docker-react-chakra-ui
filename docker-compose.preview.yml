@@ -1,0 +1,13 @@
+version: "3"
+services:
+  node:
+    image: "node:18-alpine"
+    user: "node"
+    working_dir: /home/node/app
+    volumes:
+      - .:/home/node/app
+    ports:
+      - 4000:4000
+    command: sh -c "yarn install && yarn run build && yarn serve -s build -l 4000"
+    stdin_open: true
+    tty: true

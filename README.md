@@ -2,8 +2,6 @@
 
 Scaffold a new project using dokerized boilerplate Create React App and Chakra UI.
 
-**Note:** This is dockerized version of [Boilerplate React + Chakra UI](https://github.com/inplayo-com/react-chakra-ui-bolerplate)
-
 ## Run Locally
 
 #### Clone the project
@@ -30,4 +28,12 @@ To build this project run
 
 ```bash
   docker compose -f docker-compose.build.yml up
+```
+
+## Preview Locally
+
+To build this project run
+
+```bash
+  docker compose -f docker-compose.preview.yml up
 ```

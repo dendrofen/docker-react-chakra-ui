@@ -1,10 +1,10 @@
 import { Link } from "@chakra-ui/react";
-import { Image } from "./image";
+import Image from "./image";
 
-export function GithubCorner() {
+const GithubCorner = () => {
     return (
         <Link
-            href="https://github.com/inplayo-com/react-chakra-ui-bolerplate"
+            href="https://github.com/dendrofen/docker-react-chakra-ui"
             className="github-corner"
             aria-label="View source on GitHub"
             isExternal
@@ -13,3 +13,5 @@ export function GithubCorner() {
         </Link>
     )
 }
+
+export default GithubCorner;

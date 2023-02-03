@@ -1,4 +1,4 @@
-version: "3"
+version: "3.9"
 services:
   node:
     image: "node:18-alpine"
@@ -8,6 +8,14 @@ services:
       - .:/home/node/app
     ports:
       - 3000:3000
-    command: sh -c "yarn install && yarn run start --host 0.0.0.0 --port 3000 --disableHostCheck true"
+    environment:
+      - WATCHPACK_POLLING=true
+      - WDS_SOCKET_HOST=127.0.0.1
+      - WDS_SOCKET_PORT=3000
+    command: sh -c "yarn install && yarn run start"
     stdin_open: true
     tty: true
+
+networks:
+  dendrofen_react_chakra_network:
+    external: true
